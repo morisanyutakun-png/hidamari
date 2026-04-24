@@ -16,6 +16,10 @@ Jimdo で作られていた「ひだまりのヨガ」公式サイトを、Next.
 npm install
 ```
 
+## 環境変数
+
+現時点で必要な環境変数はありません。予約URL、SNS URL、サイトURLは `data/site.ts` に固定値として記載しています。
+
 ## 開発サーバー
 
 ```bash
@@ -37,7 +41,7 @@ npm run build
 3. Framework Preset は `Next.js` を選択します。
 4. Build Command は `npm run build`、Output は Next.js の標準設定のままでデプロイできます。
 
-## 予約URL・SNS URL の差し替え
+## 予約URL・SNS URL の設定場所
 
 以下のファイルにまとめています。
 
@@ -56,7 +60,7 @@ npm run build
 - `email`
 - `url`
 
-本番公開時は `siteConfig.url` を正式ドメインに変更してください。
+現在は既存 Jimdo サイトの公開URLと、既存サイトで使われている予約・SNSリンクを固定値にしています。
 
 ## 画像の差し替え
 

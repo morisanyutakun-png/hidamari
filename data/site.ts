@@ -3,16 +3,20 @@ export const siteConfig = {
   tagline: "ひだまりのような温もりで\nずっと健やか！もっと笑顔に！",
   description:
     "三重県津市・久居エリアとオンラインで楽しめる、シニア・初心者にも安心のやさしいヨガ教室。",
-  url: "https://hidamari-yoga.example.com",
-  email: "TODO@example.com",
-  privateLessonReservationUrl: "/contact",
-  saturdayLessonReservationUrl: "/contact",
-  rakutenSeniorReservationUrl: "/contact",
-  googleFormSeniorYogaUrl: "/contact",
-  googleFormOfficeYogaUrl: "/contact",
-  instagramUrl: "https://www.instagram.com/",
-  lineUrl: "https://line.me/",
-  noteUrl: "https://note.com/",
+  url: "https://hidamarinoyoga.jimdofree.com",
+  email: "https://hidamarinoyoga.jimdofree.com/お問い合わせ/",
+  privateLessonReservationUrl: "https://www.tl-assist.com/user/reservation/Jv8L6WEM/staff",
+  saturdayLessonReservationUrl:
+    "https://www.tl-assist.com/user/reservation/Jv8L6WEM/menu?staff_id=2639",
+  rakutenSeniorReservationUrl:
+    "https://docs.google.com/forms/d/e/1FAIpQLScCJvpdfpptdEDOKlt2Tm8JeJwctcwcbd2faoEknhlgPM5J7A/viewform",
+  googleFormSeniorYogaUrl:
+    "https://docs.google.com/forms/d/e/1FAIpQLScCJvpdfpptdEDOKlt2Tm8JeJwctcwcbd2faoEknhlgPM5J7A/viewform",
+  googleFormOfficeYogaUrl:
+    "https://docs.google.com/forms/d/e/1FAIpQLScCJvpdfpptdEDOKlt2Tm8JeJwctcwcbd2faoEknhlgPM5J7A/viewform",
+  instagramUrl: "https://www.instagram.com/hidamarinoyoga_morimiwa/",
+  lineUrl: "https://lin.ee/BXWBswg",
+  noteUrl: "https://note.com/mori_miwa",
 };
 
 export const navigation = [

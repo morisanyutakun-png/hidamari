@@ -1,36 +1,94 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# ひだまりのヨガ 公式サイト
 
-## Getting Started
+Jimdo で作られていた「ひだまりのヨガ」公式サイトを、Next.js App Router / TypeScript / Tailwind CSS / Vercel 前提で作り直した静的サイトです。
 
-First, run the development server:
+## 使用技術
+
+- Next.js App Router
+- TypeScript
+- Tailwind CSS
+- React
+- Vercel
+
+## セットアップ
+
+```bash
+npm install
+```
+
+## 開発サーバー
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+標準では `http://localhost:3000` で確認できます。
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## ビルド
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+```bash
+npm run build
+```
 
-## Learn More
+## Vercel デプロイ
 
-To learn more about Next.js, take a look at the following resources:
+1. GitHub などにリポジトリを接続します。
+2. Vercel で新規プロジェクトとしてインポートします。
+3. Framework Preset は `Next.js` を選択します。
+4. Build Command は `npm run build`、Output は Next.js の標準設定のままでデプロイできます。
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## 予約URL・SNS URL の差し替え
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+以下のファイルにまとめています。
 
-## Deploy on Vercel
+- `data/site.ts`
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+主に差し替える項目:
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+- `privateLessonReservationUrl`
+- `saturdayLessonReservationUrl`
+- `rakutenSeniorReservationUrl`
+- `googleFormSeniorYogaUrl`
+- `googleFormOfficeYogaUrl`
+- `instagramUrl`
+- `lineUrl`
+- `noteUrl`
+- `email`
+- `url`
+
+本番公開時は `siteConfig.url` を正式ドメインに変更してください。
+
+## 画像の差し替え
+
+画像は `public/images/` に配置しています。
+
+- `public/images/hidamari-yoga-placeholder.svg`
+- `public/images/instructor-placeholder.svg`
+- `public/images/ogp.svg`
+
+実写真に差し替える場合は、同じパスに画像を置くか、各コンポーネント内の `src` を変更してください。画像には必ず内容が伝わる `alt` を設定してください。
+
+## SEO 設定
+
+- 共通 metadata: `app/layout.tsx`
+- 各ページ metadata: `app/**/page.tsx`
+- sitemap: `app/sitemap.ts`
+- robots.txt: `app/robots.ts`
+- 構造化データ JSON-LD: `app/page.tsx`
+- 旧 Jimdo URL リダイレクト: `next.config.ts`
+
+## 主なページ
+
+- `/`
+- `/lessons`
+- `/online-yoga`
+- `/local-yoga`
+- `/saturday-morning-yoga`
+- `/rakuten-senior`
+- `/agreement`
+- `/contact`
+- `/instructor`
+- `/videos`
+- `/blog`
+- `/privacy`
+- `/legal`

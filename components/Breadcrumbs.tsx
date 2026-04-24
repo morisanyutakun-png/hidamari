@@ -6,7 +6,7 @@ type BreadcrumbsProps = {
 
 export function Breadcrumbs({ items }: BreadcrumbsProps) {
   return (
-    <nav aria-label="パンくずリスト" className="text-sm text-stone-600">
+    <nav aria-label="パンくずリスト" className="text-sm font-medium text-stone-500">
       <ol className="flex flex-wrap items-center gap-2">
         <li>
           <Link href="/" className="font-bold text-stone-700 hover:text-stone-950">

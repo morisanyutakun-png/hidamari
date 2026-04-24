@@ -21,9 +21,9 @@ export function ContactForm() {
 
   if (sent) {
     return (
-      <div className="rounded-[1.75rem] border border-[var(--color-leaf)] bg-white p-7 shadow-[0_18px_45px_rgba(91,64,45,0.08)]">
-        <h2 className="text-2xl font-bold text-stone-950">お問い合わせを受け付けました</h2>
-        <p className="mt-4 text-lg leading-8 text-stone-700">
+      <div className="rounded-[2rem] border border-black/[0.06] bg-white/80 p-7 shadow-[var(--shadow-soft)] backdrop-blur">
+        <h2 className="text-2xl font-extrabold text-stone-950">お問い合わせを受け付けました</h2>
+        <p className="mt-4 text-lg font-medium leading-8 text-stone-600">
           こちらは仮の送信完了表示です。実運用時は API Routes や外部フォームサービスへ接続できます。
         </p>
         <Button type="button" variant="secondary" className="mt-6" onClick={() => setSent(false)}>
@@ -36,14 +36,14 @@ export function ContactForm() {
   return (
     <form
       onSubmit={handleSubmit}
-      className="grid gap-5 rounded-[1.75rem] border border-[var(--color-cream-dark)] bg-white p-6 shadow-[0_18px_45px_rgba(91,64,45,0.08)] sm:p-8"
+      className="grid gap-5 rounded-[2rem] border border-black/[0.06] bg-white/78 p-6 shadow-[var(--shadow-soft)] backdrop-blur sm:p-8"
     >
       <label className="grid gap-2 text-base font-bold text-stone-800">
         お名前
         <input
           required
           name="name"
-          className="min-h-12 rounded-2xl border border-[var(--color-cream-dark)] bg-white px-4 text-base font-normal outline-none focus:border-[var(--color-leaf)]"
+          className="min-h-12 rounded-2xl border border-black/[0.08] bg-white/90 px-4 text-base font-normal outline-none transition focus:border-[var(--color-leaf)] focus:shadow-[0_0_0_4px_rgba(139,166,120,0.14)]"
           autoComplete="name"
         />
       </label>
@@ -53,7 +53,7 @@ export function ContactForm() {
           required
           type="email"
           name="email"
-          className="min-h-12 rounded-2xl border border-[var(--color-cream-dark)] bg-white px-4 text-base font-normal outline-none focus:border-[var(--color-leaf)]"
+          className="min-h-12 rounded-2xl border border-black/[0.08] bg-white/90 px-4 text-base font-normal outline-none transition focus:border-[var(--color-leaf)] focus:shadow-[0_0_0_4px_rgba(139,166,120,0.14)]"
           autoComplete="email"
         />
       </label>
@@ -61,7 +61,7 @@ export function ContactForm() {
         お問い合わせ種別
         <select
           name="type"
-          className="min-h-12 rounded-2xl border border-[var(--color-cream-dark)] bg-white px-4 text-base font-normal outline-none focus:border-[var(--color-leaf)]"
+          className="min-h-12 rounded-2xl border border-black/[0.08] bg-white/90 px-4 text-base font-normal outline-none transition focus:border-[var(--color-leaf)] focus:shadow-[0_0_0_4px_rgba(139,166,120,0.14)]"
           defaultValue="オンラインヨガ"
         >
           {inquiryTypes.map((type) => (
@@ -75,7 +75,7 @@ export function ContactForm() {
           required
           name="message"
           rows={7}
-          className="rounded-2xl border border-[var(--color-cream-dark)] bg-white px-4 py-3 text-base font-normal leading-8 outline-none focus:border-[var(--color-leaf)]"
+          className="rounded-2xl border border-black/[0.08] bg-white/90 px-4 py-3 text-base font-normal leading-8 outline-none transition focus:border-[var(--color-leaf)] focus:shadow-[0_0_0_4px_rgba(139,166,120,0.14)]"
         />
       </label>
       <Button type="submit" className="w-full sm:w-auto">

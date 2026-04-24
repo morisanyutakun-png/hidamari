@@ -28,12 +28,12 @@ export default function LegalPage() {
         breadcrumbs={[{ label: "特定商取引法に基づく表記" }]}
       />
       <section className="px-5 py-14">
-        <div className="mx-auto max-w-4xl overflow-hidden rounded-[1.75rem] border border-[var(--color-cream-dark)] bg-white shadow-sm">
+        <div className="mx-auto max-w-4xl overflow-hidden rounded-[2rem] border border-black/[0.06] bg-white/78 shadow-[var(--shadow-soft)] backdrop-blur">
           <dl>
             {rows.map(([label, value]) => (
-              <div key={label} className="grid gap-2 border-b border-[var(--color-cream-dark)] p-5 last:border-0 sm:grid-cols-[12rem_1fr]">
-                <dt className="font-bold text-[var(--color-brown)]">{label}</dt>
-                <dd className="leading-8 text-stone-700">{value}</dd>
+              <div key={label} className="grid gap-2 border-b border-black/[0.06] p-5 last:border-0 sm:grid-cols-[12rem_1fr]">
+                <dt className="font-bold text-stone-500">{label}</dt>
+                <dd className="font-medium leading-8 text-stone-700">{value}</dd>
               </div>
             ))}
           </dl>

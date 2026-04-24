@@ -24,11 +24,11 @@ export default function PrivacyPage() {
         breadcrumbs={[{ label: "プライバシーポリシー" }]}
       />
       <section className="px-5 py-14">
-        <div className="mx-auto max-w-4xl rounded-[1.75rem] bg-white p-6 shadow-sm sm:p-8">
+        <div className="mx-auto max-w-4xl rounded-[2rem] border border-black/[0.06] bg-white/78 p-7 shadow-[var(--shadow-soft)] backdrop-blur sm:p-9">
           {sections.map(([title, body]) => (
-            <section key={title} className="border-b border-[var(--color-cream-dark)] py-6 first:pt-0 last:border-0 last:pb-0">
-              <h2 className="text-2xl font-bold text-stone-950">{title}</h2>
-              <p className="mt-3 text-lg leading-9 text-stone-700">{body}</p>
+            <section key={title} className="border-b border-black/[0.06] py-6 first:pt-0 last:border-0 last:pb-0">
+              <h2 className="text-3xl font-extrabold text-stone-950">{title}</h2>
+              <p className="mt-4 text-lg font-medium leading-9 text-stone-600">{body}</p>
             </section>
           ))}
         </div>

@@ -27,11 +27,11 @@ export default function AgreementPage() {
         breadcrumbs={[{ label: "レッスンにあたっての同意事項" }]}
       />
       <section className="px-5 py-14">
-        <div className="mx-auto max-w-4xl rounded-[1.75rem] border border-[var(--color-cream-dark)] bg-white p-6 shadow-[0_18px_45px_rgba(91,64,45,0.08)] sm:p-8">
-          <h2 className="text-2xl font-bold text-stone-950">ご参加前の確認事項</h2>
-          <ul className="mt-6 grid gap-4 text-lg leading-9 text-stone-700">
+        <div className="mx-auto max-w-4xl rounded-[2rem] border border-black/[0.06] bg-white/78 p-7 shadow-[var(--shadow-soft)] backdrop-blur sm:p-9">
+          <h2 className="text-3xl font-extrabold text-stone-950">ご参加前の確認事項</h2>
+          <ul className="mt-6 grid gap-4 text-lg font-medium leading-9 text-stone-600">
             {items.map((item) => (
-              <li key={item} className="rounded-2xl bg-[var(--color-cream)] px-5 py-4">
+              <li key={item} className="rounded-2xl border border-black/[0.06] bg-stone-50 px-5 py-4">
                 {item}
               </li>
             ))}

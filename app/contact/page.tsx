@@ -19,9 +19,9 @@ export default function ContactPage() {
       />
       <section className="px-5 py-14">
         <div className="mx-auto grid max-w-6xl gap-8 lg:grid-cols-[0.8fr_1.2fr]">
-          <aside className="rounded-[1.75rem] bg-[var(--color-cream)] p-6">
-            <h2 className="text-2xl font-bold text-stone-950">ご相談いただけること</h2>
-            <ul className="mt-5 grid gap-3 text-lg leading-8 text-stone-700">
+          <aside className="rounded-[2rem] border border-black/[0.06] bg-white/78 p-7 shadow-[var(--shadow-soft)] backdrop-blur">
+            <h2 className="text-3xl font-extrabold text-stone-950">ご相談いただけること</h2>
+            <ul className="mt-6 grid gap-3 text-lg font-medium leading-8 text-stone-600">
               <li>オンラインヨガの参加について</li>
               <li>土曜日の朝ヨガの予約について</li>
               <li>高齢者施設・地域サロンへの出張ヨガ</li>

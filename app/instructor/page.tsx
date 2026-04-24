@@ -23,18 +23,18 @@ export default function InstructorPage() {
         <div className="mx-auto max-w-6xl">
           <InstructorCard />
           <div className="mt-8 grid gap-6 lg:grid-cols-2">
-            <article className="rounded-[1.75rem] bg-white p-6 shadow-sm">
-              <h2 className="text-2xl font-bold text-stone-950">レッスンへの想い</h2>
-              <p className="mt-4 text-lg leading-9 text-stone-700">
+            <article className="rounded-[2rem] border border-black/[0.06] bg-white/78 p-7 shadow-[var(--shadow-soft)] backdrop-blur">
+              <h2 className="text-3xl font-extrabold text-stone-950">レッスンへの想い</h2>
+              <p className="mt-5 text-lg font-medium leading-9 text-stone-600">
                 ヨガが初めての方、体が硬いと感じている方、運動に苦手意識がある方にも、安心して参加していただける時間を大切にしています。
                 地域福祉の現場で培った寄り添う姿勢を活かし、一人ひとりのペースに合わせて声をかけます。
               </p>
             </article>
-            <article className="rounded-[1.75rem] bg-white p-6 shadow-sm">
-              <h2 className="text-2xl font-bold text-stone-950">保有資格</h2>
+            <article className="rounded-[2rem] border border-black/[0.06] bg-white/78 p-7 shadow-[var(--shadow-soft)] backdrop-blur">
+              <h2 className="text-3xl font-extrabold text-stone-950">保有資格</h2>
               <ul className="mt-4 grid gap-2 text-base font-bold text-stone-800">
                 {qualifications.map((qualification) => (
-                  <li key={qualification} className="rounded-2xl bg-[var(--color-cream)] px-4 py-3">
+                  <li key={qualification} className="rounded-2xl border border-black/[0.06] bg-stone-50 px-4 py-3">
                     {qualification}
                   </li>
                 ))}

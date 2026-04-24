@@ -36,7 +36,7 @@ export default function LocalYogaPage() {
               仕事の合間に取り入れやすい、短時間のリフレッシュヨガにも対応します。
             </FeatureCard>
           </div>
-          <div className="mt-8 rounded-[1.75rem] bg-white p-6 text-lg leading-9 text-stone-700 shadow-sm">
+          <div className="mt-8 rounded-[2rem] border border-black/[0.06] bg-white/78 p-7 text-lg font-medium leading-9 text-stone-600 shadow-[var(--shadow-soft)] backdrop-blur">
             会場の広さ、椅子の有無、参加人数、目的に合わせて内容を整えます。
             初めての企画でも、どうぞお気軽にご相談ください。
           </div>

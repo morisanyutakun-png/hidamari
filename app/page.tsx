@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import Link from "next/link";
+import { Button } from "@/components/Button";
 import { CTASection } from "@/components/CTASection";
 import { FeatureCard } from "@/components/FeatureCard";
 import { Hero } from "@/components/Hero";
@@ -47,7 +47,7 @@ export default function Home() {
       />
       <Hero />
 
-      <section className="px-5 py-14">
+      <section className="px-5 py-16 sm:py-20">
         <div className="mx-auto max-w-6xl">
           <SectionHeading
             eyebrow="こんなお悩みに"
@@ -58,7 +58,7 @@ export default function Home() {
             {concerns.map((concern) => (
               <div
                 key={concern}
-                className="rounded-3xl border border-white bg-white/85 px-5 py-4 text-base font-bold leading-7 text-stone-800 shadow-sm"
+                className="rounded-3xl border border-black/[0.06] bg-white/72 px-5 py-4 text-base font-bold leading-7 text-stone-800 shadow-sm backdrop-blur"
               >
                 {concern}
               </div>
@@ -67,7 +67,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="bg-white/55 px-5 py-14">
+      <section className="border-y border-black/[0.04] bg-white/45 px-5 py-16 sm:py-20">
         <div className="mx-auto max-w-6xl">
           <SectionHeading
             eyebrow="特徴"
@@ -87,7 +87,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="px-5 py-14">
+      <section className="px-5 py-16 sm:py-20">
         <div className="mx-auto max-w-6xl">
           <SectionHeading
             eyebrow="レッスン一覧"
@@ -102,7 +102,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="bg-[var(--color-cream)] px-5 py-14">
+      <section className="border-y border-black/[0.04] bg-[linear-gradient(180deg,#f7f2e9_0%,#fbfaf7_100%)] px-5 py-16 sm:py-20">
         <div className="mx-auto max-w-6xl">
           <SectionHeading eyebrow="講師" title="安心して参加できる、やさしい案内を大切に。" />
           <div className="mt-8">
@@ -111,7 +111,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="px-5 py-14">
+      <section className="px-5 py-16 sm:py-20">
         <div className="mx-auto max-w-6xl">
           <SectionHeading
             eyebrow="地域・出張ヨガ"
@@ -129,16 +129,13 @@ export default function Home() {
               仕事の合間に取り入れやすい、短時間のチェアヨガやリフレッシュヨガに対応します。
             </FeatureCard>
           </div>
-          <Link
-            href="/contact"
-            className="mt-8 inline-flex min-h-12 items-center rounded-full bg-[var(--color-sun)] px-6 py-3 text-base font-bold text-stone-950 hover:bg-[var(--color-sun-strong)]"
-          >
+          <Button href="/contact" className="mt-8">
             出張ヨガについて相談する
-          </Link>
+          </Button>
         </div>
       </section>
 
-      <section className="bg-white/55 px-5 py-14">
+      <section className="border-y border-black/[0.04] bg-white/45 px-5 py-16 sm:py-20">
         <div className="mx-auto grid max-w-6xl gap-8 lg:grid-cols-[0.8fr_1.2fr]">
           <SectionHeading eyebrow="新着情報" title="ひだまりからのお知らせ" />
           <NewsList />

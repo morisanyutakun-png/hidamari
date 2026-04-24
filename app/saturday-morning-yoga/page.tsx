@@ -28,12 +28,12 @@ export default function SaturdayMorningYogaPage() {
       />
       <section className="px-5 py-14">
         <div className="mx-auto grid max-w-6xl gap-8 lg:grid-cols-[0.95fr_1.05fr]">
-          <div className="rounded-[1.75rem] border border-[var(--color-cream-dark)] bg-white p-6 shadow-[0_18px_45px_rgba(91,64,45,0.08)]">
-            <h2 className="text-2xl font-bold text-stone-950">レッスン詳細</h2>
+          <div className="rounded-[2rem] border border-black/[0.06] bg-white/78 p-7 shadow-[var(--shadow-soft)] backdrop-blur">
+            <h2 className="text-3xl font-extrabold text-stone-950">レッスン詳細</h2>
             <dl className="mt-5 grid gap-4 text-lg">
               {details.map(([label, value]) => (
-                <div key={label} className="grid gap-1 border-b border-[var(--color-cream-dark)] pb-4 sm:grid-cols-[8rem_1fr]">
-                  <dt className="font-bold text-[var(--color-brown)]">{label}</dt>
+                <div key={label} className="grid gap-1 border-b border-black/[0.06] pb-4 sm:grid-cols-[8rem_1fr]">
+                  <dt className="font-bold text-stone-500">{label}</dt>
                   <dd className="text-stone-800">{value}</dd>
                 </div>
               ))}

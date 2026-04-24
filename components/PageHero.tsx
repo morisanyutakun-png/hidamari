@@ -8,17 +8,19 @@ type PageHeroProps = {
 
 export function PageHero({ title, description, breadcrumbs }: PageHeroProps) {
   return (
-    <section className="bg-[linear-gradient(135deg,#fff8df_0%,#ffffff_48%,#edf7e7_100%)] px-5 py-12 sm:py-16">
+    <section className="relative overflow-hidden px-5 py-14 sm:py-20">
+      <div className="absolute inset-0 -z-10 bg-[linear-gradient(180deg,#ffffff_0%,#fbfaf7_100%)]" />
+      <div className="absolute right-0 top-0 -z-10 h-80 w-80 rounded-full bg-[rgba(245,201,85,0.18)] blur-3xl" />
       <div className="mx-auto max-w-6xl">
         {breadcrumbs ? <Breadcrumbs items={breadcrumbs} /> : null}
         <div className="mt-8 max-w-4xl">
-          <p className="mb-3 text-sm font-bold tracking-[0.08em] text-[var(--color-brown)]">
+          <p className="mb-4 text-sm font-bold text-[var(--color-brown)]">
             ひだまりのヨガ
           </p>
-          <h1 className="text-4xl font-bold leading-tight text-stone-950 sm:text-5xl">
+          <h1 className="text-5xl font-extrabold leading-[1.12] text-stone-950 sm:text-6xl">
             {title}
           </h1>
-          <p className="mt-5 text-lg leading-9 text-stone-700">{description}</p>
+          <p className="mt-6 max-w-3xl text-lg font-medium leading-9 text-stone-600">{description}</p>
         </div>
       </div>
     </section>

@@ -32,14 +32,14 @@ export default function LessonsPage() {
           </div>
         </div>
       </section>
-      <section className="bg-white/60 px-5 py-14">
-        <div className="mx-auto max-w-6xl overflow-x-auto rounded-[1.75rem] border border-[var(--color-cream-dark)] bg-white p-5 shadow-[0_18px_45px_rgba(91,64,45,0.08)]">
+      <section className="border-y border-black/[0.04] bg-white/45 px-5 py-16">
+        <div className="mx-auto max-w-6xl overflow-x-auto rounded-[2rem] border border-black/[0.06] bg-white/78 p-6 shadow-[var(--shadow-soft)] backdrop-blur">
           <table className="w-full min-w-[760px] border-collapse text-left text-base">
-            <caption className="mb-4 text-left text-2xl font-bold text-stone-950">
+            <caption className="mb-5 text-left text-3xl font-extrabold text-stone-950">
               料金・対象者一覧
             </caption>
             <thead>
-              <tr className="border-b border-[var(--color-cream-dark)] text-stone-700">
+              <tr className="border-b border-black/[0.08] text-stone-600">
                 <th className="py-4 pr-4">レッスン</th>
                 <th className="py-4 pr-4">時間</th>
                 <th className="py-4 pr-4">料金</th>
@@ -49,7 +49,7 @@ export default function LessonsPage() {
             </thead>
             <tbody>
               {lessons.map((lesson) => (
-                <tr key={lesson.title} className="border-b border-[var(--color-cream-dark)] last:border-0">
+                <tr key={lesson.title} className="border-b border-black/[0.06] last:border-0">
                   <td className="py-4 pr-4 font-bold text-stone-950">{lesson.title}</td>
                   <td className="py-4 pr-4">{lesson.duration}</td>
                   <td className="py-4 pr-4">{lesson.price}</td>

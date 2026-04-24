@@ -21,10 +21,10 @@ export default function VideosPage() {
       <section className="px-5 py-14">
         <div className="mx-auto grid max-w-6xl gap-5 md:grid-cols-2 xl:grid-cols-3">
           {videos.map((video) => (
-            <article key={video.title} className="rounded-[1.75rem] border border-[var(--color-cream-dark)] bg-white p-6 shadow-[0_18px_45px_rgba(91,64,45,0.08)]">
+            <article key={video.title} className="rounded-[2rem] border border-black/[0.06] bg-white/78 p-7 shadow-[var(--shadow-soft)] backdrop-blur transition duration-300 hover:-translate-y-1 hover:shadow-[var(--shadow-hover)]">
               <p className="text-sm font-bold text-[var(--color-brown)]">{video.target}</p>
-              <h2 className="mt-2 text-xl font-bold leading-snug text-stone-950">{video.title}</h2>
-              <p className="mt-3 text-base leading-8 text-stone-700">{video.description}</p>
+              <h2 className="mt-3 text-2xl font-extrabold leading-snug text-stone-950">{video.title}</h2>
+              <p className="mt-4 text-base font-medium leading-8 text-stone-600">{video.description}</p>
               <p className="mt-4 font-bold text-stone-800">所要時間: {video.duration}</p>
               <Button href={video.href} variant="secondary" className="mt-6 w-full" target="_blank" rel="noreferrer">
                 動画を見る

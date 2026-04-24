@@ -19,10 +19,10 @@ type NativeButtonProps = BaseProps &
 
 const variants = {
   primary:
-    "bg-[var(--color-sun)] text-stone-950 shadow-sm hover:bg-[var(--color-sun-strong)]",
+    "bg-[var(--color-ink)] text-white shadow-[0_14px_30px_rgba(29,29,31,0.18)] hover:bg-stone-700",
   secondary:
-    "border border-[var(--color-leaf)] bg-white/80 text-stone-900 hover:bg-[var(--color-leaf-soft)]",
-  ghost: "text-stone-800 hover:bg-white/70",
+    "border border-[var(--color-line)] bg-white/70 text-stone-950 shadow-sm backdrop-blur hover:bg-white",
+  ghost: "text-stone-700 hover:bg-white/70",
 };
 
 function isLinkButton(props: LinkButtonProps | NativeButtonProps): props is LinkButtonProps {
@@ -31,7 +31,7 @@ function isLinkButton(props: LinkButtonProps | NativeButtonProps): props is Link
 
 export function Button(props: LinkButtonProps | NativeButtonProps) {
   const { children, variant = "primary", className = "" } = props;
-  const classes = `inline-flex min-h-12 items-center justify-center rounded-full px-6 py-3 text-base font-bold leading-none transition focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[var(--color-leaf)] ${variants[variant]} ${className}`;
+  const classes = `inline-flex min-h-12 items-center justify-center rounded-full px-6 py-3 text-base font-bold leading-none transition duration-300 hover:-translate-y-0.5 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[var(--color-leaf)] ${variants[variant]} ${className}`;
 
   if (isLinkButton(props)) {
     const {

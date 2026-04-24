@@ -39,7 +39,7 @@ export default function OnlineYogaPage() {
           </div>
         </div>
       </section>
-      <section className="bg-white/60 px-5 py-14">
+      <section className="border-y border-black/[0.04] bg-white/45 px-5 py-16">
         <div className="mx-auto max-w-6xl">
           <SectionHeading title="オンラインレッスン" description="水曜夜のプライベートレッスン、金曜朝と夜の短時間レッスンをご用意しています。" />
           <div className="mt-8 grid gap-5 md:grid-cols-2 xl:grid-cols-3">
